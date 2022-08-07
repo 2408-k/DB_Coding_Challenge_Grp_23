@@ -21,3 +21,17 @@ INSERT INTO Security VALUES(
     10000,
     'Healthy'
 );
+
+INSERT INTO Users VALUES(
+    1,
+    'Dummy',
+    'dummy@abc.com',
+    'user'
+);
+
+INSERT INTO Users VALUES(
+    2,
+    'wummy',
+    'wummy@abc.com',
+    'user'
+);

@@ -12,8 +12,8 @@ face_value FLOAT NOT NULL,
 status_ VARCHAR(100) NOT NULL
 );
 
-DROP TABLE IF EXISTS User;
-CREATE TABLE User (
+DROP TABLE IF EXISTS Users;
+CREATE TABLE Users (
     Id INT PRIMARY KEY,
     name_ VARCHAR(50),
     email VARCHAR(50),
