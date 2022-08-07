@@ -17,13 +17,13 @@ public class SecurityController {
 	SecurityService service;
 	
 	@GetMapping("/securities")  
-	private List<Security> getAllStudent()   
+	private List<Security> getAllSecuirty()   
 	{  
 	return service.getAllSecurities();  
 	}  
 	
 	@GetMapping("/security/{id}")  
-	private Security getStudent(@PathVariable("id") int id)   
+	private Security getSecurity(@PathVariable("id") int id)   
 	{  
 	return service.getSecurityById(id);  
 	} 

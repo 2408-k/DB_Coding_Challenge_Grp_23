@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS Security;
-  
+
 CREATE TABLE Security (
 Id INT PRIMARY KEY,
 isin INT NOT NULL,
@@ -10,4 +10,24 @@ coupon FLOAT NOT NULL,
 type_ VARCHAR(30) NOT NULL,
 face_value FLOAT NOT NULL,
 status_ VARCHAR(100) NOT NULL
+);
+
+DROP TABLE IF EXISTS User;
+CREATE TABLE User (
+    Id INT PRIMARY KEY,
+    name_ VARCHAR(50),
+    email VARCHAR(50),
+    role_ VARCHAR(50)
+);
+
+DROP TABLE IF EXISTS CounterParty;
+CREATE TABLE CounterParty (
+    Id INT PRIMARY KEY,
+    name_ VARCHAR(50)
+);
+
+DROP TABLE IF EXISTS Book;
+CREATE TABLE Book (
+    Id INT PRIMARY KEY,
+    name_ VARCHAR(50)
 );
