@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS Security;
+  
+CREATE TABLE Security (
+Id INT PRIMARY KEY,
+isin INT NOT NULL,
+cusip INT NOT NULL,
+issuer VARCHAR(100) NOT NULL,
+maturity_date VARCHAR(20) NOT NULL,
+coupon FLOAT NOT NULL,
+type_ VARCHAR(30) NOT NULL,
+face_value FLOAT NOT NULL,
+status_ VARCHAR(100) NOT NULL
+);
